@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container{
+    border-radius: 3px;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: rgba(255, 255, 255, 0.80); 
+    backdrop-filter: blur(1px); 
+}
+.container-form h2{
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #ff00b3;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-form span{
+    font-size: 15px;
+    margin-bottom: 2px; 
+}
+.container-input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #EEEEEE;
+} 
+.container-input input{ 
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+.registers button{
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(214, 43, 129);
+    color: white;
+    align-self: center;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+/* PARA SOPORTE EN DISPOSITIVOS MÓVILES 
+@media (max-width: 768px) {
+    .video-background {
+        display: none;
+    }
+    body {
+        background: url('/background-fallback.jpg') center/cover no-repeat;
+    }
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+    */
